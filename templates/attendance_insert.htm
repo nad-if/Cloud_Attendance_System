@@ -43,14 +43,14 @@
   </nav>
   
     <div class="row">
-    <div class="container-fluid" style="padding-top: 0%;background-color: lightblue;">
+    <div class="container-fluid" style="padding-top: 0%;;">
       <ul class="nav navbar-nav">
         <div class="navbar-header">
           <i class='fas fa-user-graduate' style='font-size:50px;color: black;'></i>
         </div>
         <li ><a href="attendance_viewall">View All</a></li>
         <li ><a href="attendance_viewsingle">View Single</a></li>
-        <li class="active" style="background-color: lightgrey;"><a href="attendance_insert">Insert</a></li>
+        <li class="active" ;"><a href="attendance_insert">Insert</a></li>
         <li><a href="attendance_update">Update</a></li>
         <li><a href="attendance_delete">Delete</a></li>
       </ul>
@@ -60,17 +60,17 @@
     <div class="row" style="padding-top: 10px;">
 
       <div class="col-sm-1"></div>
-      <div class="col-sm-4" style="background-color: lightgrey">
+      <div class="col-sm-4" ">
 
         <form>
 
           {% csrf_token %}
           <label for="validationTooltip01">Student ID</label>
-          <input type="text" style="background-color: lightyellow;width: 85%;" class="form-control" id="studentId" placeholder="Student ID" required>
+          <input type="text";width: 85%;" class="form-control" id="studentId" placeholder="Student ID" required>
           
           <label for="validationTooltip01" style="padding-top: 15px;">Subject</label>
           <div class="form-group">
-            <select class="form-control" id="subjectCode" style="background-color: lightyellow;width: 85%;">
+            <select class="form-control" id="subjectCode";width: 85%;">
               <option>Advanced Mathematics</option>
               <option>Computer Networks</option>
               <option>Algorithms</option>
@@ -80,11 +80,11 @@
           </div>
           
           <label for="validationTooltip01" style="padding-top: 5px;">Lecture Date</label>
-          <input type="datetime-local" id="lectureDate" style="background-color: lightyellow;width: 85%;">
+          <input type="datetime-local" id="lectureDate";width: 85%;">
           <p></p>
           <label for="validationTooltip01" style="padding-top: 5px;">Status</label>
           <div class="form-group">
-          <select class="form-control" id="status" style="background-color: lightyellow;width: 85%;">
+          <select class="form-control" id="status";width: 85%;">
             <option>Present</option>
             <option>Absent</option>
           </select>
@@ -97,7 +97,7 @@
 
       <div class="col-sm-2"></div>
 
-      <div class="col-sm-4" style="background-color: lightgrey;">
+      <div class="col-sm-4" ;">
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Output</label>
           <textarea id="output" class="form-control rounded-0" id="exampleFormControlTextarea1" style="height: 295px;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 200;" readonly></textarea>
@@ -111,7 +111,7 @@
 </body>
 
 <div class="footer" style="left: 0;bottom: 0;width:100%;background-color: grey;color: white;text-align: center;">
-  <p>All Rights Reserved</p>
+  <p></p>
 
 </html>
 

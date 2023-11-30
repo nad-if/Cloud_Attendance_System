@@ -44,7 +44,22 @@
   </nav>
   
     <div class="row">
-    <div class="container-fluid" style="padding-top: 0%;background-color: lightblue;">
+    <div class="container-fluid bg-info; background-color: white">
+      <ul class="nav nav-pills">
+        <div class="navbar-brand">
+          <i class='fas fa-user-graduate' style='font-size:50px;color: black;'></i>
+        </div>
+        <li class="nav-item"><a class="nav-link" href="student_viewall">View All</a></li>
+        <li class="nav-item"><a class="nav-link" href="student_viewsingle">View Single</a></li>
+        <li class="nav-item"><a class="nav-link" href="student_insert">Insert</a></li>
+        <li class="nav-item"><a class="nav-link active" href="student_update">Update</a></li>
+        <li class="nav-item"><a class="nav-link" href="student_delete">Delete</a></li>
+      </ul>
+    </div>
+  
+    
+      <!--
+        <div class="container-fluid" style="padding-top: 0%;;">
       <ul class="nav navbar-nav">
         <div class="navbar-header">
           <i class='fas fa-user-graduate' style='font-size:50px;color: black;'></i>
@@ -52,45 +67,64 @@
         <li ><a href="student_viewall">View All</a></li>
         <li ><a href="student_viewsingle">View Single</a></li>
         <li ><a href="student_insert">Insert</a></li>
-        <li class="active" style="background-color: lightgrey;"><a href="student_update">Update</a></li>
+        <li class="active" ;"><a href="student_update">Update</a></li>
         <li ><a href="student_delete">Delete</a></li>
         </ul>
     </div>
+      -->
 
 
     <div class="row" style="padding-top: 10px;">
 
       <div class="col-sm-1"></div>
-      <div class="col-sm-4" style="background-color: lightgrey;height: 385px;">
+      <div class="col-sm-4 bg-light" style="height: 385px;">
 
         <form>
           {% csrf_token %}
-          <label for="validationTooltip01">NIM Mahasiswa</label>
-          <input type="text" style="background-color: lightyellow;width: 85%;" class="form-control" id="studentId" placeholder="Student ID" required>
+          <div class="form-group">
+            <label for="studentId">NIM Mahasiswa</label>
+            <input type="text" class="form-control bg-warning" id="studentId" placeholder="Student ID" required>
+          </div>
           
-          <label for="validationTooltip01" style="padding-top: 10px;">Alamat</label>
-          <input type="text" style="background-color: lightyellow;width: 85%;" class="form-control" id="address" placeholder="Address">
+          <div class="form-group">
+            <label for="address">Alamat</label>
+            <input type="text" class="form-control bg-warning" id="address" placeholder="Address">
+          </div>
           
-          <label for="validationTooltip01" style="padding-top: 10px;">No. HP</label>
-          <input type="text" style="background-color: lightyellow;width: 85%;" class="form-control" id="mobileNo" placeholder="Mobile Number">
+          <div class="form-group">
+            <label for="mobileNo">No. HP</label>
+            <input type="text" class="form-control bg-warning" id="mobileNo" placeholder="Mobile Number">
+          </div>
           
-          <label for="validationTooltip01" style="padding-top: 10px;">Jurusan</label>
-          <input type="text" style="background-color: lightyellow;width: 85%;" class="form-control" id="department" placeholder="Department">
+          <div class="form-group">
+            <label for="department">Jurusan</label>
+            <input type="text" class="form-control bg-warning" id="department" placeholder="Department">
+          </div>
           
-          <div style="padding-bottom: 10px;"></div>
-
-          <button class="btn btn-primary" style="padding-top: 10px;" type="button" onclick="update_record()">Update Record</button>
+          <button class="btn btn-primary" type="button" onclick="update_record()">Update Record</button>
         </form>
       </div>
 
+
       <div class="col-sm-2"></div>
 
-      <div class="col-sm-4" style="background-color: lightgrey;">
+      <!--
+        <div class="col-sm-4" ;">
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Output</label>
           <textarea class="form-control rounded-0" id="output" style="height: 345px;" readonly></textarea>
         </div>
       </div>
+      -->
+
+      <div class="col-sm-4 bg-light">
+        <div class="form-group">
+          <label for="output">Output</label>
+          <textarea class="form-control rounded-0 bg-warning" id="output" style="height: 345px;" readonly></textarea>
+        </div>
+      </div>
+
+      
 
       <div class="col-sm-1"></div>
     </div>
@@ -101,7 +135,7 @@
 <!--
 
 <div class="footer" style="position: fixed;left: 0;bottom: 0;width:100%;background-color: grey;color: white;text-align: center;">
-  <p>All Rights Reserved</p>
+  <p></p>
 
 -->
 
