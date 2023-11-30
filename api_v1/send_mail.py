@@ -6,11 +6,11 @@ def sendEmail(studentId,firstName,lastName):
     SENDER = "nus.jenkins@gmail.com"
     RECIPIENT_LIST = ["nus.jenkins@gmail.com","grishi2020@gmail.com","zaheernew@gmail.com"]
 
-    SUBJECT = "Student Registered for Cloud Attendance System"
+    SUBJECT = "Student Registered for Cloud Sistem Informasi Kehadiran Anak Telekomunikasi (SIKAT)"
 
     # The email body for recipients with non-HTML email clients.
     BODY_TEXT = ("Hi "+firstName+" "+lastName+"\n\n"
-                "You have been registred for attendance system. Please refer more details,\n"+
+                "You have been registred for Sistem Informasi Kehadiran Anak Telekomunikasi (SIKAT). Please refer more details,\n"+
                 "Student ID : "+studentId+"\n"+"Password : Student@123\n\nBest Regards,\nAdminstration"
                 )
 
