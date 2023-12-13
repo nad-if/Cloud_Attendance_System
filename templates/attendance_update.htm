@@ -44,15 +44,15 @@
   </nav>
   
     <div class="row">
-    <div class="container-fluid" style="padding-top: 0%;;">
-      <ul class="nav navbar-nav">
-        <div class="navbar-header">
+    <div class="container-fluid bg-white">
+      <ul class="nav nav-pills">
+        <div class="navbar-brand">
           <i class='fas fa-user-graduate' style='font-size:50px;color: black;'></i>
         </div>
         <li ><a href="attendance_viewall">View All</a></li>
         <li ><a href="attendance_viewsingle">View Single</a></li>
         <li ><a href="attendance_insert">Insert</a></li>
-        <li class="active" ;"><a href="attendance_update">Update</a></li>
+        <li class="active" ;><a href="attendance_update">Update</a></li>
         <li><a href="attendance_delete">Delete</a></li>
       </ul>
     </div>
@@ -61,13 +61,13 @@
     <div class="row" style="padding-top: 10px;">
 
       <div class="col-sm-1"></div>
-      <div class="col-sm-4" ">
+      <div class="col-sm-4">
 
         <form>
 
           {% csrf_token %}
           <label for="validationTooltip01">Record ID</label>
-          <input type="text";width: 85%;" class="form-control" id="Id" placeholder="Record ID" required>
+          <input type="text";width: 85%; class="form-control" id="Id" placeholder="Record ID" required>
           
           <label for="validationTooltip01" style="padding-top: 15px;">Subject</label>
           <div class="form-group">
