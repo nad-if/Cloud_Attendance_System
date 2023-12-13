@@ -23,17 +23,17 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" style="font-family: american typewriter, serif;" href="home">SIKAT</a>
+      <b><i><a class="navbar-brand" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="home">SIKAT</a></i></b>
     </div>
 
-    <ul class="nav navbar-nav"> 
+    <ul class="nav navbar-nav" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 
       <li class="active"><a href="home">Personal Details</a></li>
       <li><a href="viewPersonal">Attendance</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
       <li><a href="{% url 'logout' %}">
-        Hi {{ user.first_name }}      
+              
         
         <span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
     </ul>

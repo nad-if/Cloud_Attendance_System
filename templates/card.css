@@ -1,0 +1,48 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background-color: rgba(255,255,255,0.1);
+  }
+  
+  /* Add rounded corners to the bottom left and the bottom right corner of the image */
+  .card::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+  }
+  
+  /* The main content of the card */
+  .card-content {
+      padding-left :20%;
+      padding-right :20%;
+      background-color :#f1f1f1; 
+      color :#333333; 
+      font-family :Arial; 
+      font-size :16px; 
+  }
+  
+  /* The title of the card */
+  .card-title {
+      font-weight:bold; 
+      font-size :24px; 
+      margin-bottom :10px; 
+  }
+  
+  /* The subtitle of the card */
+  .card-subtitle {
+      font-size :18px; 
+  }

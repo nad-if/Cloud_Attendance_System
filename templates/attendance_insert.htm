@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-  <title><a class="navbar-brand" style="font-family: american typewriter, serif;" href="home">SIKAT</a>hadiran Anak Telekomunikasi (SIKAT)</title>
+  <title>Sistem Informasi Kehadiran Anak Telekomunikasi (SIKAT)</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,10 +23,10 @@
   <nav class="navbar navbar-inverse" style="padding-bottom: 0px;">
     <div class="container-fluid" >
       <div class="navbar-header">
-        <a class="navbar-brand" style="font-family: american typewriter, serif;" href="home">SIKAT</a>
+        <b><i><a class="navbar-brand" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="home">SIKAT</a></i></b>
       </div>
   
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
         <li><a href="student_insert">Mahasiwa</a></li>
         <li class="active"><a href="attendance_insert">Kehadiran</a></li>
         <li><a href="subjects_viewall">Kurikulum</a></li>
@@ -34,7 +34,7 @@
   
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{% url 'logout' %}">
-          Hi {{ user.first_name }}      
+                
           
           <span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
       </ul>
@@ -43,14 +43,14 @@
   </nav>
   
     <div class="row">
-    <div class="container-fluid" style="padding-top: 0%;;">
-      <ul class="nav navbar-nav">
-        <div class="navbar-header">
+    <div class="container-fluid">
+      <ul class="nav nav-pills" >
+        <div class="navbar-brand">
           <i class='fas fa-user-graduate' style='font-size:50px;color: black;'></i>
         </div>
         <li ><a href="attendance_viewall">View All</a></li>
         <li ><a href="attendance_viewsingle">View Single</a></li>
-        <li class="active" ;"><a href="attendance_insert">Insert</a></li>
+        <li class="active" ;><a href="attendance_insert">Insert</a></li>
         <li><a href="attendance_update">Update</a></li>
         <li><a href="attendance_delete">Delete</a></li>
       </ul>
@@ -97,7 +97,7 @@
 
       <div class="col-sm-2"></div>
 
-      <div class="col-sm-4" ;">
+      <div class="col-sm-4" ;>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Output</label>
           <textarea id="output" class="form-control rounded-0" id="exampleFormControlTextarea1" style="height: 295px;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 200;" readonly></textarea>
